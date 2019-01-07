@@ -13,6 +13,10 @@ install node modules.
 
 `yarn install`
 
+build
+
+`yarn build`
+
 start webpack-dev-server
 
 `yarn serve`
