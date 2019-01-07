@@ -1,10 +1,11 @@
 {
   "name": "redux-land-examples",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "redux-land example",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "serve": "webpack-dev-server"
   },
   "keywords": [],
   "author": "Koyama Sohei <koyamaso0309@gmail.com> (https://github.com/KoyamaSohei)",
@@ -14,7 +15,7 @@
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
-    "redux-land": "^1.0.0"
+    "redux-land": "^1.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -27,6 +28,7 @@
     "ts-loader": "^5.3.3",
     "typescript": "^3.2.2",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0"
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
   }
 }
