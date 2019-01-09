@@ -8,7 +8,7 @@ function sleep(ms: number) {
 
 const AInc: Land<State, AINC, INC> = async function*({ state, action }) {
   await sleep(action.payload.delay);
-  yield await {
+  yield {
     type: ActionType.INC,
     payload: action.payload.num
   };
