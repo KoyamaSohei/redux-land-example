@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { Dispatch } from "redux";
 import { connect, Provider } from "react-redux";
 import store from "./module";
-import { State, Actions, ActionType, LandType } from "./types";
+import { State, Actions, ActionType, LandActionType } from "./types";
 
 interface MainPropsState {
   counter?: number;
@@ -33,7 +33,7 @@ const mapDispatchToProps = (dispatch: Dispatch<Actions>) => ({
     dispatch({ type: ActionType.INC, payload: 3 });
   },
   ainc: () => {
-    dispatch({ type: LandType.AINC, payload: { num: 1, delay: 3000 } });
+    dispatch({ type: LandActionType.AINC, payload: { num: 1, delay: 3000 } });
   }
 });
 

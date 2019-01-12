@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from "redux";
-import createLandMiddleware, { Land } from "redux-land";
-import { State, ActionType, Actions, LandType, INC, AINC } from "./types";
+import createLandMiddleware, { Land, Lands } from "redux-land";
+import { State, ActionType, Actions, LandActionType, INC, AINC } from "./types";
 
 function sleep(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -14,11 +14,13 @@ const AInc: Land<State, AINC, INC> = async function*({ state, action }) {
   };
 };
 
-const middleware = createLandMiddleware({
-  [LandType.AINC]: AInc
-});
+export const lands : Lands = {
+  [LandActionType.AINC]: AInc
+}
 
-const reducer = (state: State = { counter: 0 }, action: Actions) => {
+const middleware = createLandMiddleware(lands);
+
+export const reducer = (state: State = { counter: 0 }, action: Actions) => {
   switch (action.type) {
     case ActionType.INC:
       return { ...state, counter: state.counter + action.payload };

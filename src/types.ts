@@ -12,11 +12,11 @@ export type INC = Action<ActionType.INC> & {
   payload: number;
 };
 
-export enum LandType {
+export enum LandActionType {
   AINC = "AINC"
 }
 
-export type AINC = Action<LandType.AINC> & {
+export type AINC = Action<LandActionType.AINC> & {
   payload: {
     num: number;
     delay: number;
