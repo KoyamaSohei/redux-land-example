@@ -1,7 +1,7 @@
 redux-land-example 
 =============
 
-this repository is a example of [react-land](https://github.com/KoyamaSohei/redux-land)
+this repository is a example of [redux-land](https://github.com/KoyamaSohei/redux-land)
 
 ## setup
 
