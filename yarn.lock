@@ -4790,9 +4790,9 @@ realpath-native@^1.0.0:
   dependencies:
     util.promisify "^1.0.0"
 
-redux-land@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/redux-land/-/redux-land-1.4.0.tgz#8274d1f9cdeac085065df67ac214f086b4d2d85a"
+redux-land@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/redux-land/-/redux-land-1.5.1.tgz#83926e7abaffe66ba4459e9c25bdf3e742143925"
   dependencies:
     redux "^4.0.1"
 
