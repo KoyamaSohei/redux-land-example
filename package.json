@@ -1,6 +1,6 @@
 {
   "name": "redux-land-examples",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "redux-land example",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
-    "redux-land": "^1.3.0"
+    "redux-land": "^1.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

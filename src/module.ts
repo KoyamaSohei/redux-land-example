@@ -14,11 +14,11 @@ const AInc: Land<State, AINC, INC> = async function*({ state, action }) {
   };
 };
 
-export const lands : Lands = {
+export const lands : Lands<typeof LandActionType, State> = {
   [LandActionType.AINC]: AInc
 }
 
-const middleware = createLandMiddleware(lands);
+const middleware = createLandMiddleware<typeof LandActionType>(lands);
 
 export const reducer = (state: State = { counter: 0 }, action: Actions) => {
   switch (action.type) {
