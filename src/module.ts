@@ -6,7 +6,7 @@ function sleep(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const AInc: Land<State, AINC, INC> = async function*({ state, action }) {
+export const AInc: Land<State, AINC, INC> = async function*({ state, action }) {
   await sleep(action.payload.delay);
   yield {
     type: ActionType.INC,
