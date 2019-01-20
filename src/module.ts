@@ -14,7 +14,7 @@ export const AInc: Land<State, AINC, INC> = async function*({ state, action }) {
   };
 };
 
-export const lands : Lands<typeof LandActionType, State> = {
+export const lands : Lands<typeof LandActionType, State, AINC, INC> = {
   [LandActionType.AINC]: AInc
 }
 
