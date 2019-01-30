@@ -5,16 +5,11 @@ import { connect, Provider } from "react-redux";
 import store from "./module";
 import { State, Actions, ActionType, LandActionType } from "./types";
 
-interface MainPropsState {
-  counter?: number;
-}
+type MainPropsState = ReturnType<typeof mapStateToProps>;
 
-interface MainPropsDispatch {
-  inc3?: () => void;
-  ainc?: () => void;
-}
+type MainPropsDispatch = ReturnType<typeof mapDispatchToProps>;
 
-interface MainProps extends MainPropsState, MainPropsDispatch {}
+type MainProps = MainPropsState & MainPropsDispatch;
 
 const main: FunctionComponent<MainProps> = ({ counter, inc3, ainc }) => (
   <div>
@@ -37,7 +32,7 @@ const mapDispatchToProps = (dispatch: Dispatch<Actions>) => ({
   }
 });
 
-const Main = connect<MainPropsState, MainPropsDispatch, MainProps, State>(
+const Main = connect(
   mapStateToProps,
   mapDispatchToProps
 )(main);
