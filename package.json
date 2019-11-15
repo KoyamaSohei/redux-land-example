@@ -12,7 +12,7 @@
   "author": "Koyama Sohei <koyamaso0309@gmail.com> (https://github.com/KoyamaSohei)",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.8.6",
+    "react": "^16.12.0",
     "react-dom": "^16.11.0",
     "react-redux": "^7.1.0",
     "redux": "^4.0.4",
